@@ -1,8 +1,9 @@
 # clculadora.py
 
 from division import division
-
 from suma import sumar
+from resta import restar
+from multiplicacion import multiplicar
 
 # Código principal.
 
@@ -18,6 +19,20 @@ while(1):
         num2 = int(input("Ingrese segundo número: "))
 
         print("Resultado:", sumar(num1, num2))
+
+    if inicio == 2:
+        num1 = int(input("Ingrese primer número: "))
+
+        num2 = int(input("Ingrese segundo número: "))
+
+        print("Resultado:", restar(num1, num2))
+
+    if inicio == 3:
+        num1 = int(input("Ingrese primer número: "))
+
+        num2 = int(input("Ingrese segundo número: "))
+
+        print("Resultado:", multiplicar(num1, num2))
 
     if inicio == 4:
         num1 = int(input("Ingrese primer número: "))
